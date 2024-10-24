@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Địa chỉ của ứng dụng React
+    origin: "https://socket-print-pearl.vercel.app/", // Địa chỉ của ứng dụng React
     methods: ["GET", "POST"]
   }
 });

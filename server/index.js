@@ -41,7 +41,6 @@ io.on("connection", (socket) => {
 
 // Lắng nghe trên cổng do môi trường cung cấp hoặc cổng 5000 khi chạy local
 const port = process.env.PORT || 5000;
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-s

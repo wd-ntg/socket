@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { io, Socket } from "socket.io-client";
 import Lottie from "lottie-react";
 
-const SERVER_URL = "https://socket-rjw7.onrender.com";
+const SERVER_URL = "https://socket-print-server.onrender.com";
 
 import dragon from "./assets/dragon.json";
 import cat from "./assets/cat.json";

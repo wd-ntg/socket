@@ -8,7 +8,7 @@ const app = express();
 // Cấu hình CORS để cho phép từ mọi nguồn hoặc một nguồn cụ thể (tùy chỉnh nếu cần)
 const io = new Server(http.createServer(app), {
   cors: {
-    origin: process.env.FRONTEND_URL || "*", // Chỉ định URL frontend nếu có
+    origin: "*", // Chỉ định URL frontend nếu có
     methods: ["GET", "POST"]
   }
 });
@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
 });
 
 // Lắng nghe trên cổng do môi trường cung cấp hoặc cổng 5000 khi chạy local
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 9000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
